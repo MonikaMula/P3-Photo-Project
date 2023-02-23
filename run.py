@@ -8,13 +8,16 @@ except:
     image = Image.open('Maxi.jpg')
 print("Picture wasn't insert, automatic upload pictire as an example")
 
-# 180 Image 🙃
-image = Image.open('Maxi.jpg')
-image_rotate = image.rotate(180)
-image_rotate.show()
 
-image_transpose = image.transpose
-image_transpose.show()
-
-image_rotate = image.rotate(90)
-image_rotate.show()
+#Image Rotation
+rotation = input('Would You Like Rotate An Image \n Answer Yes/No')
+if rotation.lower().startswith("y"):
+   rotation_number = input('What Degree You wish picture to rotate? \n Plase Degree Number')
+try:
+    image_rotate = image.rotate(int(rotation_number))
+    image_rotate.show()
+except:
+    print("Can't accept Your Answer")
+    
+    
+    
