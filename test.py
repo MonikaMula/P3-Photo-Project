@@ -46,7 +46,7 @@ if grayscale.lower().startswith("y"):
   image = ImageOps.grayscale(image)
   image.show()
 
-savin_mode = input("Would Youlike to save Your picture? \n Yes/No: ")
+savin_mode = input("Would You like to save Your picture? \n Yes/No: ")
 
 if savin_mode.lower().startswith("y"):
   save_path=input("Insert path where You wish to save picture: \n ")
